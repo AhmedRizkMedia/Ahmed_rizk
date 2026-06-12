@@ -262,59 +262,68 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const mediaProductionDetails = {
-    vid_rebranding: {
+    vid_bts: {
       title: "BTS Behind the Scenes Spot",
       price: "AR Media Commercial Spot",
       type: "video",
-      src: "videos/bts.mp4",
+      src: "https://player.vimeo.com/video/1200879512?autoplay=1",
       desc: "An behind-the-scenes promotional spot showcasing AR Media Production's commercial filming projects. Directed, storyboarded, and executed the editing flow with Adobe Premiere Pro.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Video / Commercial", "Full HD Promo Spot", "Adobe Premiere & After Effects", "Director & Executive Producer"]
+      labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
+      values: ["Video / Commercial", "Full HD Promo Spot", "Vimeo / Social", "Director & Executive Producer"]
     },
-    vid_dental: {
+    vid_zee: {
       title: "Zee Connect TV Feature Spot",
       price: "Zee TV Commercial Branding",
       type: "video",
-      src: "videos/zee.mp4",
+      src: "https://player.vimeo.com/video/1200878556?autoplay=1",
       desc: "TV commercial coverage produced for Zee Connect. Structured the lighting, sound layout, camera tracking movements, and supervised the post-production rendering timeline.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Social / YouTube Video", "TV Feature Spot", "Final Cut Pro X", "Videographer & Video Editor"]
-    },
-    vid_lojain: {
-      title: "Masayea Lojain - Lojain Omran Show",
-      price: "Celebrity Visual Branding Spot",
-      type: "video",
-      src: "videos/lojain.mp4",
-      desc: "Visual branding campaign video produced for Masayea Lojain, featuring TV personality Lojain Omran. Handled visual direction and creative catalog grade alignment.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Video / Motion Graphic", "High-Resolution Social Spot", "Premiere & After Effects", "Creative Visual Lead"]
-    },
-    vid_sira: {
-      title: "Emarat Al Aman - SIRA Project",
-      price: "Corporate Security Campaign Spot",
-      type: "video",
-      src: "videos/sira.mp4",
-      desc: "A corporate promotional video spot shot for SIRA (Security Industry Regulatory Agency) in Dubai. Managed production crew, camera positions, and post-production flow.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Corporate Videography", "Marketing Video Release", "Adobe Premiere Pro", "Executive Video Producer"]
-    },
-    vid_presenter: {
-      title: "TV Presenter Course Coverage",
-      price: "Media Training Promo Spot",
-      type: "video",
-      src: "videos/presenter.mp4",
-      desc: "Promo video spot covering the professional TV Presenter Course at Reporters Media Production. Designed lighting coordinates and captured key classroom training moments.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Video / Event spot", "TV Presenter Spot", "Premiere Pro & After Effects", "Lead Videographer & Editor"]
+      labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
+      values: ["Video / TV Commercial", "TV Feature Spot", "Vimeo / Zee TV", "Videographer & Video Editor"]
     },
     vid_firstprint: {
       title: "First Print Company Promo",
       price: "Industrial Branding Video",
       type: "video",
-      src: "videos/firstprint.mp4",
+      src: "https://player.vimeo.com/video/1200880870?autoplay=1",
       desc: "Industrial commercial video spot produced for First Print Company. Showcased high-speed printing machinery, design workflow, and corporate branding details.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Commercial Video Spot", "Full HD Promo Spot", "Premiere Pro & Final Cut", "Producer & Storyboarder"]
+      labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
+      values: ["Commercial Video Spot", "Full HD Promo Spot", "Vimeo / Web", "Producer & Storyboarder"]
+    },
+    vid_sira: {
+      title: "Emarat Al Aman - SIRA Project",
+      price: "Corporate Security Campaign Spot",
+      type: "video",
+      src: "https://player.vimeo.com/video/1200879840?autoplay=1",
+      desc: "A corporate promotional video spot shot for SIRA (Security Industry Regulatory Agency) in Dubai. Managed production crew, camera positions, and post-production flow.",
+      labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
+      values: ["Corporate Videography", "Marketing Video Release", "Vimeo / SIRA", "Executive Video Producer"]
+    },
+    vid_presenter: {
+      title: "TV Presenter Course Coverage",
+      price: "Media Training Promo Spot",
+      type: "video",
+      src: "https://player.vimeo.com/video/1200880069?autoplay=1",
+      desc: "Promo video spot covering the professional TV Presenter Course at Reporters Media Production. Designed lighting coordinates and captured key classroom training moments.",
+      labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
+      values: ["Video / Event spot", "TV Presenter Spot", "Vimeo / Training", "Lead Videographer & Editor"]
+    },
+    vid_makeup1: {
+      title: "Liberty Dental - Clinical Brand 1",
+      price: "Clinical Campaign Video",
+      type: "video",
+      src: "https://player.vimeo.com/video/462214444?autoplay=1",
+      desc: "Visual branding campaign shot for Liberty Dental Clinic. Standardized lighting and editing formats to build a premium visual layout for clinical networks.",
+      labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
+      values: ["Social / YouTube Video", "Interview Series", "Vimeo / Social", "Videographer & Video Editor"]
+    },
+    vid_makeup2: {
+      title: "Liberty Dental - Clinical Brand 2",
+      price: "Clinical Campaign Video",
+      type: "video",
+      src: "https://player.vimeo.com/video/462214521?autoplay=1",
+      desc: "Second visual branding campaign shot for Liberty Dental Clinic, showcasing advanced equipment, modern facilities, and clinical aesthetics.",
+      labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
+      values: ["Social / YouTube Video", "Interview Series", "Vimeo / Social", "Videographer & Video Editor"]
     },
     photo_fashion: {
       title: "Premium Fashion Editorial",
