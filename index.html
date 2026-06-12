@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Rizk | Head of Marketing & Media Production Portfolio</title>
+  <meta name="description" content="Personal marketing leadership and media production portfolio of Ahmed Rizk. Specialized in Dubai Real Estate, Google Ads, and CRM workflows.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Sticky Header Nav -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">Ahmed Rizk <span>Marketing Director</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#real-estate">Real Estate Cases</a></li>
+          <li><a href="#media-production">Media Portfolio</a></li>
+          <li><a href="#experience">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-header-container">
+      <div class="hero-badge">Open to Opportunities</div>
+      <h1>Ahmed Rizk</h1>
+      <p class="hero-tagline">Marketing System Architect & Media Director</p>
+      
+      <div class="hero-actions">
+        <a href="#real-estate" class="btn btn-primary">Real Estate Case Studies</a>
+        <a href="#media-production" class="btn btn-secondary">Media Production Portfolio</a>
+      </div>
+    </div>
+    
+    <!-- Hero Photography & Media Portfolio Banner (Scrolling Marquee) -->
+    <div class="hero-media-banner">
+      <div class="container marquee-header-container">
+        <span class="marquee-title">Featured Media & Photography Portfolio</span>
+        <span class="marquee-sub">Click cards to preview work</span>
+      </div>
+      <div class="marquee-wrapper">
+        <div class="marquee-track">
+          <!-- Card 1: BTS -->
+          <div class="marquee-card" data-media-id="vid_rebranding">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_87ac7bd0a5ab47f1a5300f7956da8977~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="BTS Commercial Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>BTS Commercial Spot</h4>
+              <p>Videography & Storyboarding</p>
+            </div>
+          </div>
+          <!-- Card 2: Fashion Editorial -->
+          <div class="marquee-card" data-media-id="photo_fashion">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_2ae9c42ce02f4b438145bc9e6768b17e~mv2_d_1541_2416_s_2.jpg/v1/fill/w_300,h_220,al_c,q_80/1-473%20copy.jpg" alt="Fashion Editorial">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Fashion Editorial</h4>
+              <p>Photography & Retouching</p>
+            </div>
+          </div>
+          <!-- Card 3: Zee Connect Spot -->
+          <div class="marquee-card" data-media-id="vid_dental">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_b661c26a94e848a68dee7a6984c5fe85~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="Zee Connect Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Zee Connect TV spot</h4>
+              <p>Commercial Branding</p>
+            </div>
+          </div>
+          <!-- Card 4: Billboard Display -->
+          <div class="marquee-card" data-media-id="photo_billboard">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_c287a09500904765baf450690e22f11b~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/blank-advertising-light-box-on-modern-ai.jpg" alt="Outdoor Billboard Display">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Outdoor Billboard</h4>
+              <p>Sheikh Zayed Road Campaign</p>
+            </div>
+          </div>
+          <!-- Card 5: Lojain Omran Show -->
+          <div class="marquee-card" data-media-id="vid_lojain">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_cf69662e3f9b45a5b2bac3272b5b1b9bf002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="Lojain Omran Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Masayea Lojain Show</h4>
+              <p>Celebrity Branding</p>
+            </div>
+          </div>
+          <!-- Card 6: Event Coverage -->
+          <div class="marquee-card" data-media-id="photo_event">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_0ea4e0508b7845a4915f74c39240ec33~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/camera-at-media-conference-KE3ZALM.jpg" alt="Press Event Coverage">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Event Coverage</h4>
+              <p>Corporate Photo Journalism</p>
+            </div>
+          </div>
+          <!-- Card 7: SIRA Corporate Spot -->
+          <div class="marquee-card" data-media-id="vid_sira">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_24cb31cbd5844c2fae26f8bda4cc2a86f002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="SIRA Project Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Emarat Al Aman (SIRA)</h4>
+              <p>Corporate Marketing Spot</p>
+            </div>
+          </div>
+          <!-- Card 8: Food Styling -->
+          <div class="marquee-card" data-media-id="photo_food">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg" alt="Food Styling">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Food Styling Setup</h4>
+              <p>Creative Hospitality Shot</p>
+            </div>
+          </div>
+          <!-- Card 9: TV Presenter Course -->
+          <div class="marquee-card" data-media-id="vid_presenter">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_cefc5aeb0c004d7483db298bc7504899f002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="TV Presenter Course">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>TV Presenter Course</h4>
+              <p>Media Coverage</p>
+            </div>
+          </div>
+          <!-- Card 10: Jumia Catalog Automation -->
+          <div class="marquee-card" data-media-id="photo_jumia">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg/v1/fill/w_300,h_220,al_c,q_80/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg" alt="Jumia Catalog retouch">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Catalog Automation</h4>
+              <p>Jumia Egypt Guideline</p>
+            </div>
+          </div>
+          <!-- Card 11: First Print Spot -->
+          <div class="marquee-card" data-media-id="vid_firstprint">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_22c50b1f0b8d4d36825e44f9dfd1e16af002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="First Print Promo">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>First Print Promo</h4>
+              <p>Industrial Commercial</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Duplicated track to create seamless loop -->
+        <div class="marquee-track" aria-hidden="true">
+          <!-- Card 1 -->
+          <div class="marquee-card" data-media-id="vid_rebranding">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_87ac7bd0a5ab47f1a5300f7956da8977~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="BTS Commercial Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>BTS Commercial Spot</h4>
+              <p>Videography & Storyboarding</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="marquee-card" data-media-id="photo_fashion">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_2ae9c42ce02f4b438145bc9e6768b17e~mv2_d_1541_2416_s_2.jpg/v1/fill/w_300,h_220,al_c,q_80/1-473%20copy.jpg" alt="Fashion Editorial">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Fashion Editorial</h4>
+              <p>Photography & Retouching</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="marquee-card" data-media-id="vid_dental">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_b661c26a94e848a68dee7a6984c5fe85~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="Zee Connect Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Zee Connect TV spot</h4>
+              <p>Commercial Branding</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="marquee-card" data-media-id="photo_billboard">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_c287a09500904765baf450690e22f11b~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/blank-advertising-light-box-on-modern-ai.jpg" alt="Outdoor Billboard Display">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Outdoor Billboard</h4>
+              <p>Sheikh Zayed Road Campaign</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="marquee-card" data-media-id="vid_lojain">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_cf69662e3f9b45a5b2bac3272b5b1b9bf002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="Lojain Omran Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Masayea Lojain Show</h4>
+              <p>Celebrity Branding</p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="marquee-card" data-media-id="photo_event">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_0ea4e0508b7845a4915f74c39240ec33~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/camera-at-media-conference-KE3ZALM.jpg" alt="Press Event Coverage">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Event Coverage</h4>
+              <p>Corporate Photo Journalism</p>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="marquee-card" data-media-id="vid_sira">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_24cb31cbd5844c2fae26f8bda4cc2a86f002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="SIRA Project Spot">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Emarat Al Aman (SIRA)</h4>
+              <p>Corporate Marketing Spot</p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="marquee-card" data-media-id="photo_food">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg/v1/fill/w_300,h_220,al_c,q_80/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg" alt="Food Styling">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Food Styling Setup</h4>
+              <p>Creative Hospitality Shot</p>
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="marquee-card" data-media-id="vid_presenter">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_cefc5aeb0c004d7483db298bc7504899f002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="TV Presenter Course">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>TV Presenter Course</h4>
+              <p>Media Coverage</p>
+            </div>
+          </div>
+          <!-- Card 10 -->
+          <div class="marquee-card" data-media-id="photo_jumia">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-photo">Photo</span>
+              <img src="https://static.wixstatic.com/media/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg/v1/fill/w_300,h_220,al_c,q_80/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg" alt="Jumia Catalog retouch">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>Catalog Automation</h4>
+              <p>Jumia Egypt Guideline</p>
+            </div>
+          </div>
+          <!-- Card 11 -->
+          <div class="marquee-card" data-media-id="vid_firstprint">
+            <div class="marquee-card-img">
+              <span class="card-type-badge type-video">Video</span>
+              <img src="https://static.wixstatic.com/media/e5965d_22c50b1f0b8d4d36825e44f9dfd1e16af002.jpg/v1/fill/w_300,h_220,al_c,q_80/file.jpg" alt="First Print Promo">
+            </div>
+            <div class="marquee-card-meta">
+              <h4>First Print Promo</h4>
+              <p>Industrial Commercial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Real Estate Case Studies & Projects -->
+  <section id="real-estate" class="case-studies">
+    <!-- Metrics Dashboard -->
+    <div class="container" style="margin-bottom: 6rem;">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon">📈</div>
+          <div class="metric-value" data-target="34.28" data-percent="true">0%</div>
+          <div class="metric-label">Conversion Rate</div>
+          <div class="metric-desc">Google Ads Search campaign (vs 2-5% industry average)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">👤</div>
+          <div class="metric-value" data-target="3000" data-plus="true">0</div>
+          <div class="metric-label">Leads Tracked</div>
+          <div class="metric-desc">Fully classified inside customized CRM pipelines</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">⚡</div>
+          <div class="metric-value" data-target="90" data-percent="true">0%</div>
+          <div class="metric-label">Cost Reduction</div>
+          <div class="metric-desc">Maintained lead volume while dropping cost per lead</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon">🛠️</div>
+          <div class="metric-value" data-target="1">0</div>
+          <div class="metric-label">Man Team</div>
+          <div class="metric-desc">Built entire marketing and CRM structure solo</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section-header">
+        <h2>Real Estate Case Studies</h2>
+        <p>Proven marketing architecture, automation flows, and visual analytics representing lead acquisition in Dubai.</p>
+      </div>
+
+      <div class="tabs-container">
+        <button class="tab-btn active" data-tab="case1">Google Ads Optimization</button>
+        <button class="tab-btn" data-tab="case2">Lead Quality Funnel</button>
+        <button class="tab-btn" data-tab="case3">WhatsApp Chatbot Tree</button>
+      </div>
+
+      <!-- Tab 1: Google Ads -->
+      <div id="case1" class="tab-content active">
+        <div class="case-study-layout">
+          <div class="case-study-content">
+            <h3>Google Search Performance (2023)</h3>
+            <p class="case-study-highlight">Built from Zero structure to high-converting stability.</p>
+            <p class="case-study-desc">
+              Inherited no Google structure. Created keyword lists, negative keywords, and landing pages end-to-end. Within 3 months, this became the top-performing campaign in the account, showcasing robust budget resilience when ad cuts were shifted to organic channels.
+            </p>
+            <div class="case-study-stats">
+              <div class="cs-stat-card">
+                <div class="value">2,153</div>
+                <div class="label">Total Clicks (236k Impr)</div>
+              </div>
+              <div class="cs-stat-card">
+                <div class="value">738</div>
+                <div class="label">View-Through Conversions</div>
+              </div>
+            </div>
+            <ul class="case-study-bullets">
+              <li>Tracked sales-accepted leads instead of basic form fills.</li>
+              <li>Maintained steady lead volume during strict budget cuts.</li>
+              <li>Cost/Lead dropped by 40% post-optimization.</li>
+            </ul>
+          </div>
+          <div class="chart-box">
+            <h4 class="chart-title">Optimization Performance Comparison</h4>
+            <div class="bar-chart-container">
+              <div class="bar-row">
+                <div class="bar-label">Conversion Rate</div>
+                <div class="bar-track"><div class="bar-fill" data-width="34.28"></div></div>
+                <div class="bar-value">34.28%</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Industry Avg</div>
+                <div class="bar-track"><div class="bar-fill" data-width="5.0"></div></div>
+                <div class="bar-value">2-5%</div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Cost Reduction</div>
+                <div class="bar-track"><div class="bar-fill" data-width="40.0"></div></div>
+                <div class="bar-value">-40%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Lead Quality -->
+      <div id="case2" class="tab-content">
+        <div class="case-study-layout">
+          <div class="case-study-content">
+            <h3>Lead Quality Classification Funnel</h3>
+            <p class="case-study-highlight">Beyond cost per lead: managing quality as a complete system.</p>
+            <p class="case-study-desc">
+              Tracked more than 3,000+ leads with a complete classification status inside the CRM. Reduced lead response times from 24 hours down to under 2 hours. By analyzing drop-offs, budget was dynamically reallocated to highest-converting campaigns.
+            </p>
+            <div class="case-study-stats">
+              <div class="cs-stat-card">
+                <div class="value">3,000+</div>
+                <div class="label">Leads Systemized</div>
+              </div>
+              <div class="cs-stat-card">
+                <div class="value">2 Hours</div>
+                <div class="label">Response Time (from 24h)</div>
+              </div>
+            </div>
+            <ul class="case-study-bullets">
+              <li>Hover/click on segments in the chart to review the exact strategic action taken for each status type.</li>
+              <li>Identified agent follow-up delays by introducing response tracking.</li>
+            </ul>
+          </div>
+          <div class="chart-box">
+            <h4 class="chart-title">Lead Status Breakdown (3,000+ Leads)</h4>
+            <div class="donut-chart-layout">
+              <div class="donut-svg-wrapper">
+                <svg width="100%" height="100%" viewBox="0 0 200 200">
+                  <circle class="donut-segment" cx="100" cy="100" r="90" stroke="#64748b" stroke-dasharray="181.7 565.5" stroke-dashoffset="0" data-status="noanswer"></circle>
+                  <circle class="donut-segment" cx="100" cy="100" r="90" stroke="#f59e0b" stroke-dasharray="180.8 565.5" stroke-dashoffset="-181.7" data-status="unqualified"></circle>
+                  <circle class="donut-segment" cx="100" cy="100" r="90" stroke="#3b82f6" stroke-dasharray="118.5 565.5" stroke-dashoffset="-362.5" data-status="followup"></circle>
+                  <circle class="donut-segment" cx="100" cy="100" r="90" stroke="#10b981" stroke-dasharray="50.0 565.5" stroke-dashoffset="-481.0" data-status="qualified"></circle>
+                  <circle class="donut-segment" cx="100" cy="100" r="90" stroke="#ef4444" stroke-dasharray="34.4 565.5" stroke-dashoffset="-531.0" data-status="wrongnumber"></circle>
+                </svg>
+                <div class="donut-center-text">
+                  <div class="donut-center-value">3,000+</div>
+                  <div class="donut-center-label">Leads</div>
+                </div>
+              </div>
+              <div class="donut-legend">
+                <div class="legend-item" data-status="qualified"><span class="legend-color" style="background:#10b981"></span> Qualified (9%)</div>
+                <div class="legend-item" data-status="followup"><span class="legend-color" style="background:#3b82f6"></span> Follow-Up (21%)</div>
+                <div class="legend-item" data-status="unqualified"><span class="legend-color" style="background:#f59e0b"></span> Unqualified (32%)</div>
+                <div class="legend-item" data-status="noanswer"><span class="legend-color" style="background:#64748b"></span> No Answer (32%)</div>
+                <div class="legend-item" data-status="wrongnumber"><span class="legend-color" style="background:#ef4444"></span> Wrong No. (6%)</div>
+              </div>
+            </div>
+            <div id="donut-action" class="donut-action-card">
+              <h5 id="action-title">Action Plan Strategy</h5>
+              <p id="action-desc">Hover over a pie segment or legend item to view how Ahmed optimized the budget and funnel for this lead group.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Chatbot -->
+      <div id="case3" class="tab-content">
+        <div class="case-study-layout">
+          <div class="case-study-content">
+            <h3>WhatsApp Pre-Qualification Chatbot</h3>
+            <p class="case-study-highlight">Automating high-volume sorting to reduce agent fatigue.</p>
+            <p class="case-study-desc">
+              Developed a custom automated chatbot decision tree on WhatsApp. By pre-qualifying leads based on budget, property type, and buying vs selling intent, unqualified leads were filtered out early, protecting agent bandwidth.
+            </p>
+            <div class="case-study-stats">
+              <div class="cs-stat-card">
+                <div class="value">~30%</div>
+                <div class="label">Reduction in Bad Leads</div>
+              </div>
+              <div class="cs-stat-card">
+                <div class="value">100%</div>
+                <div class="label">Automated Handshakes</div>
+              </div>
+            </div>
+            <ul class="case-study-bullets">
+              <li>Click on the nodes in the tree model to simulate the pre-qualification path chosen by leads.</li>
+              <li>Qualified entries drop directly into CRM leads pipelines.</li>
+            </ul>
+          </div>
+          <div class="chart-box">
+            <h4 class="chart-title">Chatbot Logic Visualizer</h4>
+            <div class="tree-container">
+              <div class="tree-node root active" data-node="start">WhatsApp Funnel Start</div>
+              <div class="tree-level">
+                <div class="tree-node split" data-node="buy">Buy Property</div>
+                <div class="tree-node split" data-node="sell">Selling Property</div>
+              </div>
+              <div class="tree-level">
+                <div class="tree-node leaf" data-node="qual">Meets Spec -> CRM Leads</div>
+                <div class="tree-node leaf" data-node="unqual">Under Spec -> Drip Loop</div>
+              </div>
+            </div>
+            <div id="chatbot-action" class="donut-action-card" style="margin-top:2rem">
+              <p id="chatbot-action-desc">Click on any bot node to review the pre-qualification criteria.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Estate Projects Grid -->
+      <h3 style="font-size: 1.8rem; margin: 6rem 0 2rem; text-align: center; font-family: var(--font-headers); color: var(--text-primary)">Real Estate Campaigns Showcase</h3>
+      <div class="portfolio-grid">
+        <!-- Nautica Card -->
+        <div class="portfolio-card" data-project="nautica">
+          <div class="portfolio-img">
+            <div class="portfolio-badge">Select Group</div>
+            <img src="images/nautica.png" alt="Select Group Nautica Campaign">
+          </div>
+          <div class="portfolio-info">
+            <h4>Nautica at Maritime City</h4>
+            <p class="price">From AED 1.76M</p>
+            <p class="desc">Waterfront living campaign. Automated lead generation via Google Search Ads & targeted WhatsApp CRM pre-qualification.</p>
+            <div class="portfolio-meta">
+              <span>Google + WhatsApp</span>
+              <span>Select Group</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terra Golf Card -->
+        <div class="portfolio-card" data-project="terragolf">
+          <div class="portfolio-img">
+            <div class="portfolio-badge">Luxury Villas</div>
+            <img src="images/terragolf.png" alt="Terra Golf Collection Campaign">
+          </div>
+          <div class="portfolio-info">
+            <h4>Terra Golf Collection</h4>
+            <p class="price">From AED 7.2M</p>
+            <p class="desc">Signature luxury villa collection. Multi-channel messaging setup combined with private client events and SEO.</p>
+            <div class="portfolio-meta">
+              <span>SEO + Email + VIP</span>
+              <span>Jumeirah Golf Estates</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Orchard Place Card -->
+        <div class="portfolio-card" data-project="orchard">
+          <div class="portfolio-img">
+            <div class="portfolio-badge">Premium Residences</div>
+            <img src="images/orchard.png" alt="The Orchard Place Campaign">
+          </div>
+          <div class="portfolio-info">
+            <h4>The Orchard Place</h4>
+            <p class="price">From AED 703,000</p>
+            <p class="desc">JVC premium apartments. Organic search optimization and digital advertising campaigns built from scratch.</p>
+            <div class="portfolio-meta">
+              <span>Wix Organic SEO</span>
+              <span>JVC Dubai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Media Production Portfolio -->
+  <section id="media-production" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2>Media Production Portfolio</h2>
+        <p>Commercial videography, photography, and visual asset production. Filter works below.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="media-filters">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="video">Videos</button>
+        <button class="filter-btn" data-filter="photo">Photography</button>
+      </div>
+
+      <!-- Media Grid -->
+      <div class="media-grid">
+        <!-- Media Item 1: Video -->
+        <div class="media-card-item filter-item video" data-media-id="vid_rebranding">
+          <div class="media-preview-container">
+            <div class="media-card-badge">Video</div>
+            <div class="media-overlay">
+              <span class="media-play-icon">▶</span>
+            </div>
+            <img class="media-grid-img" src="https://static.wixstatic.com/media/e5965d_87ac7bd0a5ab47f1a5300f7956da8977~mv2.jpg/v1/fill/w_400,h_300,al_c,q_80/file.jpg" alt="BTS Commercial Spot">
+          </div>
+          <div class="media-card-info">
+            <h4>BTS Behind the Scenes Spot</h4>
+            <p class="media-category">AR Media Commercial Spot</p>
+          </div>
+        </div>
+
+        <!-- Media Item 2: Photo -->
+        <div class="media-card-item filter-item photo" data-media-id="photo_fashion">
+          <div class="media-preview-container">
+            <div class="media-card-badge">Photo</div>
+            <div class="media-overlay">
+              <span class="media-zoom-icon">🔍</span>
+            </div>
+            <img class="media-grid-img" src="https://static.wixstatic.com/media/e5965d_2ae9c42ce02f4b438145bc9e6768b17e~mv2_d_1541_2416_s_2.jpg/v1/fill/w_400,h_300,al_c,q_80/1-473%20copy.jpg" alt="Premium Fashion Editorial">
+          </div>
+          <div class="media-card-info">
+            <h4>Premium Fashion Editorial</h4>
+            <p class="media-category">Photography & Retouching</p>
+          </div>
+        </div>
+
+        <!-- Media Item 3: Photo -->
+        <div class="media-card-item filter-item photo" data-media-id="photo_billboard">
+          <div class="media-preview-container">
+            <div class="media-card-badge">Photo</div>
+            <div class="media-overlay">
+              <span class="media-zoom-icon">🔍</span>
+            </div>
+            <img class="media-grid-img" src="https://static.wixstatic.com/media/e5965d_c287a09500904765baf450690e22f11b~mv2.jpg/v1/fill/w_400,h_300,al_c,q_80/blank-advertising-light-box-on-modern-ai.jpg" alt="Outdoor Billboard Display">
+          </div>
+          <div class="media-card-info">
+            <h4>Outdoor Billboard Display</h4>
+            <p class="media-category">Sheikh Zayed Road Campaign</p>
+          </div>
+        </div>
+
+        <!-- Media Item 4: Video -->
+        <div class="media-card-item filter-item video" data-media-id="vid_dental">
+          <div class="media-preview-container">
+            <div class="media-card-badge">Video</div>
+            <div class="media-overlay">
+              <span class="media-play-icon">▶</span>
+            </div>
+            <img class="media-grid-img" src="https://static.wixstatic.com/media/e5965d_b661c26a94e848a68dee7a6984c5fe85~mv2.jpg/v1/fill/w_400,h_300,al_c,q_80/file.jpg" alt="Zee Connect Spot">
+          </div>
+          <div class="media-card-info">
+            <h4>Zee Connect TV Feature Spot</h4>
+            <p class="media-category">Zee TV Commercial Branding</p>
+          </div>
+        </div>
+
+        <!-- Media Item 5: Photo -->
+        <div class="media-card-item filter-item photo" data-media-id="photo_food">
+          <div class="media-preview-container">
+            <div class="media-card-badge">Photo</div>
+            <div class="media-overlay">
+              <span class="media-zoom-icon">🔍</span>
+            </div>
+            <img class="media-grid-img" src="https://static.wixstatic.com/media/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg/v1/fill/w_400,h_300,al_c,q_80/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg" alt="Food Styling Setup">
+          </div>
+          <div class="media-card-info">
+            <h4>Hospitality & Food Styling</h4>
+            <p class="media-category">Restaurant Launch Asset</p>
+          </div>
+        </div>
+
+        <!-- Media Item 6: Photo -->
+        <div class="media-card-item filter-item photo" data-media-id="photo_jumia">
+          <div class="media-preview-container">
+            <div class="media-card-badge">Photo</div>
+            <div class="media-overlay">
+              <span class="media-zoom-icon">🔍</span>
+            </div>
+            <img class="media-grid-img" src="https://static.wixstatic.com/media/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg/v1/fill/w_400,h_300,al_c,q_80/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg" alt="Jumia Egypt Catalog Automation">
+          </div>
+          <div class="media-card-info">
+            <h4>Jumia Egypt Catalog Automation</h4>
+            <p class="media-category">E-Commerce Asset Production</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="media-placeholder-hint">
+        <p>💡 <em>Note: HTML structures, classes, and overlays are pre-coded. You can replace the colored vector placeholders with direct image paths or YouTube/Vimeo video embed links in <code>script.js</code> at any time.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Journey</h2>
+        <p>A history of media production, team leadership, and full-stack marketing management.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Red Door Properties -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Marketing Manager</h3>
+                <div class="company">Red Door Properties - Dubai</div>
+              </div>
+              <span class="timeline-date">Jan 2023 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Develop and execute comprehensive marketing strategies aligned with business goals.</li>
+              <li>Oversee SEO, social media management, email marketing, and search campaigns.</li>
+              <li>Implement lead generation strategies for agents and track conversion metrics inside CRM.</li>
+              <li>Optimize budgets, analyze campaign performance, and report directly on ROI.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Reporters Training -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Head of Media Production</h3>
+                <div class="company">Reporters Training & Media Production - Dubai</div>
+              </div>
+              <span class="timeline-date">Sep 2019 – Dec 2022</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Oversaw all aspects of media production to ensure high-quality deliverables.</li>
+              <li>Managed production teams and coordinated complex videography/photography projects.</li>
+              <li>Developed strategic video content matching key client targets.</li>
+            </ul>
+            <a href="http://reporters.ae/" target="_blank" class="timeline-link">Visit Website ↗</a>
+          </div>
+        </div>
+
+        <!-- AR Media Production -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>CEO & Founder</h3>
+                <div class="company">AR Media Production - Dubai</div>
+              </div>
+              <span class="timeline-date">Jan 2016 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Established and scaled a successful media production agency from scratch.</li>
+              <li>Led creative and technical teams to produce commercial video & photo assets.</li>
+              <li>Managed client relations, contracts, and business development initiatives.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Liberty Dental Clinic -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Media Production Executive</h3>
+                <div class="company">Liberty Dental Clinic</div>
+              </div>
+              <span class="timeline-date">Mar 2019 – Sep 2019</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Managed media production for high-profile clinical marketing campaigns and branding.</li>
+              <li>Created engaging visual assets to enhance brand identity offline & online.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Jumia Egypt -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Production & Retouching Supervisor</h3>
+                <div class="company">Jumia Egypt</div>
+              </div>
+              <span class="timeline-date">Mar 2013 – Dec 2015</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Supervised photography and retouching teams to build e-commerce asset guidelines.</li>
+              <li>Implemented automated Photoshop actions to speed up processing time for listings.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Ain Shams -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>B.A. in Mass Communication</h3>
+                <div class="company">Ain Shams University</div>
+              </div>
+              <span class="timeline-date">Class of 2011</span>
+            </div>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9rem;">
+              Focused on television production, public relations, and journalism, establishing a solid foundation for media coordination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tools -->
+  <section class="skills">
+    <div class="container skills-grid">
+      <div class="skills-column">
+        <h3>Creative Software</h3>
+        <div class="skills-list">
+          <span class="skill-tag">Adobe Premiere Pro</span>
+          <span class="skill-tag">Adobe Photoshop</span>
+          <span class="skill-tag">Adobe After Effects</span>
+          <span class="skill-tag">Adobe InDesign</span>
+          <span class="skill-tag">Adobe Illustrator</span>
+          <span class="skill-tag">Final Cut Pro X</span>
+          <span class="skill-tag">Cinema 4D</span>
+        </div>
+      </div>
+      <div class="skills-column">
+        <h3>Marketing & Management</h3>
+        <div class="skills-list">
+          <span class="skill-tag">Paid Search (Google Ads)</span>
+          <span class="skill-tag">Organic SEO Strategy</span>
+          <span class="skill-tag">WhatsApp Automation</span>
+          <span class="skill-tag">CRM (Lead Hub / Hubspot)</span>
+          <span class="skill-tag">Project Management (PMP)</span>
+          <span class="skill-tag">Lead Generation</span>
+          <span class="skill-tag">Brand Management</span>
+          <span class="skill-tag">Team Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info-panel">
+        <!-- Profile Mini-Card (Relocated from Hero) -->
+        <div class="contact-profile-card">
+          <div class="floating-avatar">
+            <img src="https://static.wixstatic.com/media/e5965d_2b1a4746f56541e7ac78ccff5fd037df~mv2.jpg/v1/fill/w_100,h_100,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1622036_10154666212475645_79427348313849.jpg" alt="Ahmed Rizk">
+          </div>
+          <div class="floating-meta">
+            <h5>Ahmed Rizk</h5>
+            <p>Head of Marketing & Media</p>
+          </div>
+        </div>
+
+        <h3>Marketing System Architect</h3>
+        <p class="about-tagline">Marketing Director / Head of Marketing — Dubai Real Estate Specialist</p>
+        <p class="about-desc">
+          "I join startups that need a marketing system from scratch. I build it, fix it, and scale it, until they're ready for a full team." Expert at combining media production, Google Search optimization, WhatsApp automation, and CRM integrations to yield qualified leads and high ROI.
+        </p>
+        
+        <div class="contact-methods">
+          <div class="contact-method-card">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email Me</h4>
+              <a href="mailto:a.rizk.mask@gmail.com">a.rizk.mask@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-method-card">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Call or WhatsApp</h4>
+              <a href="tel:+971528909748">+971 52 890 9748</a>
+            </div>
+          </div>
+          <div class="contact-method-card">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>JVC, Dubai, UAE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-panel">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="form-name">Your Name</label>
+            <input type="text" id="form-name" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email Address</label>
+            <input type="email" id="form-email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="form-message">Your Message</label>
+            <textarea id="form-message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%">Send Message</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-socials">
+        <a href="http://www.linkedin.com/in/ahmedrizk1" target="_blank" class="social-circle" aria-label="LinkedIn">in</a>
+        <a href="https://www.instagram.com/armediaproduction/" target="_blank" class="social-circle" aria-label="Instagram">ig</a>
+        <a href="mailto:a.rizk.mask@gmail.com" class="social-circle" aria-label="Email">📧</a>
+        <a href="tel:+971528909748" class="social-circle" aria-label="Phone">📞</a>
+      </div>
+      <p class="footer-text">&copy; 2026 Ahmed Rizk | AR Media Production. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="portfolio-lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close">&times;</span>
+      <div class="lightbox-img" id="lightbox-media-container">
+        <img id="lightbox-img-el" src="" alt="Project Visual Preview">
+      </div>
+      <div class="lightbox-details">
+        <h3 id="lightbox-title">Project Title</h3>
+        <div id="lightbox-price" class="price">AED 0.00</div>
+        <p id="lightbox-desc">Project description body text here.</p>
+        <div class="lightbox-grid">
+          <div class="lightbox-grid-item">
+            <h5 id="label-col-1">Traffic Channel</h5>
+            <p id="lightbox-channel">Google Ads</p>
+          </div>
+          <div class="lightbox-grid-item">
+            <h5 id="label-col-2">Conversion KPI</h5>
+            <p id="lightbox-conversion">34% conversion rate</p>
+          </div>
+          <div class="lightbox-grid-item">
+            <h5 id="label-col-3">Cost per Lead</h5>
+            <p id="lightbox-cpl">AED 444 CPL</p>
+          </div>
+          <div class="lightbox-grid-item">
+            <h5 id="label-col-4">Target Campaign</h5>
+            <p id="lightbox-campaign">Nautica Waterfront Release</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
