@@ -308,22 +308,22 @@ document.addEventListener("DOMContentLoaded", () => {
       values: ["Video / Event spot", "TV Presenter Spot", "Vimeo / Training", "Lead Videographer & Editor"]
     },
     vid_makeup1: {
-      title: "Liberty Dental Clinic 1",
-      price: "Clinical Campaign Video",
+      title: "Masaya Lojain Show - Spot 1",
+      price: "Celebrity Visual Branding",
       type: "video",
       src: "https://player.vimeo.com/video/462214444?autoplay=1",
-      desc: "Visual branding campaign shot for Liberty Dental Clinic. Standardized lighting and editing formats to build a premium visual layout for clinical networks.",
+      desc: "Visual branding campaign video produced for Masaya Lojain, featuring TV personality Lojain Omran. Handled visual direction, lighting coordinates, and creative color grading.",
       labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
-      values: ["Social / YouTube Video", "Interview Series", "Vimeo / Social", "Videographer & Video Editor"]
+      values: ["Video / Motion Graphic", "High-Resolution Social Spot", "Vimeo / Social", "Creative Visual Lead"]
     },
     vid_makeup2: {
-      title: "Liberty Dental Clinic 2",
-      price: "Clinical Campaign Video",
+      title: "Masaya Lojain Show - Spot 2",
+      price: "Celebrity Visual Branding",
       type: "video",
       src: "https://player.vimeo.com/video/462214521?autoplay=1",
-      desc: "Second visual branding campaign shot for Liberty Dental Clinic, showcasing advanced equipment, modern facilities, and clinical aesthetics.",
+      desc: "Second visual branding campaign spot produced for the Masaya Lojain show. Storyboarded the editing flow and visual transitions for TV broadcast standard.",
       labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
-      values: ["Social / YouTube Video", "Interview Series", "Vimeo / Social", "Videographer & Video Editor"]
+      values: ["Video / Motion Graphic", "High-Resolution Social Spot", "Vimeo / Social", "Creative Visual Lead"]
     }
   };
 
