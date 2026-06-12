@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const mediaProductionDetails = {
     vid_bts: {
-      title: "BTS Behind the Scenes Spot",
+      title: "BTS Commercial Spot",
       price: "AR Media Commercial Spot",
       type: "video",
       src: "https://player.vimeo.com/video/1200879512?autoplay=1",
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
       values: ["Video / Commercial", "Full HD Promo Spot", "Vimeo / Social", "Director & Executive Producer"]
     },
     vid_zee: {
-      title: "Zee Connect TV Feature Spot",
+      title: "Zee Connect TV Feature",
       price: "Zee TV Commercial Branding",
       type: "video",
       src: "https://player.vimeo.com/video/1200878556?autoplay=1",
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
       values: ["Commercial Video Spot", "Full HD Promo Spot", "Vimeo / Web", "Producer & Storyboarder"]
     },
     vid_sira: {
-      title: "Emarat Al Aman - SIRA Project",
+      title: "SIRA Corporate Campaign",
       price: "Corporate Security Campaign Spot",
       type: "video",
       src: "https://player.vimeo.com/video/1200879840?autoplay=1",
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
       values: ["Corporate Videography", "Marketing Video Release", "Vimeo / SIRA", "Executive Video Producer"]
     },
     vid_presenter: {
-      title: "TV Presenter Course Coverage",
+      title: "TV Presenter Course",
       price: "Media Training Promo Spot",
       type: "video",
       src: "https://player.vimeo.com/video/1200880069?autoplay=1",
@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
       values: ["Video / Event spot", "TV Presenter Spot", "Vimeo / Training", "Lead Videographer & Editor"]
     },
     vid_makeup1: {
-      title: "Liberty Dental - Clinical Brand 1",
+      title: "Liberty Dental Clinic 1",
       price: "Clinical Campaign Video",
       type: "video",
       src: "https://player.vimeo.com/video/462214444?autoplay=1",
@@ -317,7 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
       values: ["Social / YouTube Video", "Interview Series", "Vimeo / Social", "Videographer & Video Editor"]
     },
     vid_makeup2: {
-      title: "Liberty Dental - Clinical Brand 2",
+      title: "Liberty Dental Clinic 2",
       price: "Clinical Campaign Video",
       type: "video",
       src: "https://player.vimeo.com/video/462214521?autoplay=1",
