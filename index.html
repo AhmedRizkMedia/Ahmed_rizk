@@ -211,7 +211,13 @@
               <p>Makeup Photo Session</p>
             </div>
           </div>
-        </div>
+      </div>
+    </div>
+
+    <!-- Scrolling Photography Showcase Row (Hero Counter-scroll) -->
+    <div class="hero-photo-marquee-row row-right">
+        <div id="hero-photo-track-a" class="photo-marquee-track"></div>
+        <div id="hero-photo-track-b" class="photo-marquee-track" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -599,14 +605,20 @@
         <button class="photo-filter-btn" data-filter="event">Events & Social</button>
       </div>
 
-      <!-- Photography Masonry Grid -->
-      <div id="photography-grid" class="photo-grid">
-        <!-- Dynamically populated by script.js -->
       </div>
+    </div>
 
-      <!-- Load More Button -->
-      <div class="load-more-container" style="text-align: center; margin-top: 4rem;">
-        <button id="load-more-btn" class="btn btn-secondary">Show More Photos</button>
+    <!-- Photography Marquee Rows (Edge-to-Edge) -->
+    <div class="photo-marquee-container">
+      <!-- Row 1: Scrolls Left -->
+      <div class="photo-marquee-row row-left">
+        <div id="photo-track-1a" class="photo-marquee-track"></div>
+        <div id="photo-track-1b" class="photo-marquee-track" aria-hidden="true"></div>
+      </div>
+      <!-- Row 2: Scrolls Right -->
+      <div class="photo-marquee-row row-right">
+        <div id="photo-track-2a" class="photo-marquee-track"></div>
+        <div id="photo-track-2b" class="photo-marquee-track" aria-hidden="true"></div>
       </div>
     </div>
   </section>

@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Masaya Lojain Show - Spot 1",
       price: "Celebrity Visual Branding",
       type: "video",
-      src: "https://player.vimeo.com/video/462214444?autoplay=1",
+      src: "https://player.vimeo.com/video/1200900620?autoplay=1",
       desc: "Visual branding campaign video produced for Masaya Lojain, featuring TV personality Lojain Omran. Handled visual direction, lighting coordinates, and creative color grading.",
       labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
       values: ["Video / Motion Graphic", "High-Resolution Social Spot", "Vimeo / Social", "Creative Visual Lead"]
@@ -329,6 +329,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openLightbox(data) {
     mediaContainer.innerHTML = "";
+    const lightboxContent = document.querySelector(".lightbox-content");
+    if (lightboxContent) lightboxContent.classList.add("media-only");
 
     if (data.type === "video") {
       if (data.src.endsWith(".mp4")) {
@@ -336,9 +338,6 @@ document.addEventListener("DOMContentLoaded", () => {
         video.src = data.src;
         video.controls = true;
         video.autoplay = true;
-        video.style.width = "100%";
-        video.style.height = "100%";
-        video.style.borderRadius = "12px";
         video.style.backgroundColor = "#000";
         mediaContainer.appendChild(video);
       } else {
@@ -514,12 +513,15 @@ document.addEventListener("DOMContentLoaded", () => {
     { id: "p53", file: "test 444.jpg", title: "Commercial Studio Lighting", category: "Product & Commercial", tag: "product", layout: "standard" }
   ];
 
-  const photoGrid = document.getElementById("photography-grid");
-  const loadMoreBtn = document.getElementById("load-more-btn");
+  const track1a = document.getElementById("photo-track-1a");
+  const track1b = document.getElementById("photo-track-1b");
+  const track2a = document.getElementById("photo-track-2a");
+  const track2b = document.getElementById("photo-track-2b");
+  const heroTrackA = document.getElementById("hero-photo-track-a");
+  const heroTrackB = document.getElementById("hero-photo-track-b");
   const photoFilters = document.querySelectorAll(".photo-filter-btn");
 
   let currentPhotoFilter = "all";
-  let itemsToShow = 12;
 
   function openPhotoLightbox(photoItem) {
     const data = {
@@ -534,34 +536,58 @@ document.addEventListener("DOMContentLoaded", () => {
     openLightbox(data);
   }
 
-  function renderPhotoGallery() {
-    if (!photoGrid) return;
-    
-    // Filter items based on active tag
+  function renderPhotoMarquees() {
+    // Helper to repeat items if they are too few (to ensure seamless wrapping)
+    function ensureMinimumItems(items, min = 12) {
+      if (items.length === 0) return [];
+      let repeated = [...items];
+      while (repeated.length < min) {
+        repeated = repeated.concat(items);
+      }
+      return repeated;
+    }
+
+    function generateTrackHtml(items) {
+      return items.map(item => `
+        <div class="photo-card-item ${item.layout}" data-photo-id="${item.id}">
+          <div class="photo-preview-container">
+            <img class="photo-grid-img" src="PICS/${item.file}" alt="${item.title}" loading="lazy">
+          </div>
+        </div>
+      `).join("");
+    }
+
+    // Render Hero tracks if they exist (always showing all photos)
+    if (heroTrackA && heroTrackB && heroTrackA.innerHTML === "") {
+      const heroHtml = generateTrackHtml(ensureMinimumItems(photographyItems, 12));
+      heroTrackA.innerHTML = heroHtml;
+      heroTrackB.innerHTML = heroHtml;
+    }
+
+    if (!track1a || !track1b || !track2a || !track2b) return;
+
+    // Filter items based on active category tag
     const filteredItems = photographyItems.filter(item => {
       return currentPhotoFilter === "all" || item.tag === currentPhotoFilter;
     });
 
-    // Determine slice to show
-    const itemsToRender = filteredItems.slice(0, itemsToShow);
+    // Distribute items to Row 1 (even index) and Row 2 (odd index)
+    let row1Items = filteredItems.filter((_, idx) => idx % 2 === 0);
+    let row2Items = filteredItems.filter((_, idx) => idx % 2 !== 0);
 
-    // Render cards
-    photoGrid.innerHTML = itemsToRender.map(item => `
-      <div class="photo-card-item ${item.layout} filter-photo-item" data-photo-id="${item.id}">
-        <div class="photo-preview-container">
-          <div class="photo-overlay">
-            <span class="photo-zoom-icon">🔍</span>
-          </div>
-          <img class="photo-grid-img" src="PICS/${item.file}" alt="${item.title}" loading="lazy">
-        </div>
-        <div class="photo-card-info">
-          <h4>${item.title}</h4>
-          <p class="photo-category">${item.category}</p>
-        </div>
-      </div>
-    `).join("");
+    const row1Final = ensureMinimumItems(row1Items, 12);
+    const row2Final = ensureMinimumItems(row2Items, 12);
 
-    // Bind click events to new cards
+    const htmlRow1 = generateTrackHtml(row1Final);
+    const htmlRow2 = generateTrackHtml(row2Final);
+
+    // Set identical content to both tracks in each row for seamless looping
+    track1a.innerHTML = htmlRow1;
+    track1b.innerHTML = htmlRow1;
+    track2a.innerHTML = htmlRow2;
+    track2b.innerHTML = htmlRow2;
+
+    // Bind click events to all photo cards
     document.querySelectorAll(".photo-card-item").forEach(card => {
       card.addEventListener("click", () => {
         const photoId = card.getAttribute("data-photo-id");
@@ -571,21 +597,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
-
-    // Toggle Load More button visibility
-    if (itemsToRender.length >= filteredItems.length) {
-      if (loadMoreBtn) loadMoreBtn.style.display = "none";
-    } else {
-      if (loadMoreBtn) loadMoreBtn.style.display = "inline-block";
-    }
-  }
-
-  // Load More Button Event
-  if (loadMoreBtn) {
-    loadMoreBtn.addEventListener("click", () => {
-      itemsToShow += 12;
-      renderPhotoGallery();
-    });
   }
 
   // Filters Event
@@ -594,11 +605,10 @@ document.addEventListener("DOMContentLoaded", () => {
       photoFilters.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       currentPhotoFilter = btn.getAttribute("data-filter");
-      itemsToShow = 12; // Reset count
-      renderPhotoGallery();
+      renderPhotoMarquees();
     });
   });
 
   // Call initial render
-  renderPhotoGallery();
+  renderPhotoMarquees();
 });
