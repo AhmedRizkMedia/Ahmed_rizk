@@ -317,13 +317,13 @@ document.addEventListener("DOMContentLoaded", () => {
       values: ["Video / Motion Graphic", "High-Resolution Social Spot", "Vimeo / Social", "Creative Visual Lead"]
     },
     vid_makeup2: {
-      title: "Masaya Lojain Show - Spot 2",
-      price: "Celebrity Visual Branding",
+      title: "Makeup Photo Session 1",
+      price: "Makeup Photo Session",
       type: "video",
       src: "https://player.vimeo.com/video/462214521?autoplay=1",
-      desc: "Second visual branding campaign spot produced for the Masaya Lojain show. Storyboarded the editing flow and visual transitions for TV broadcast standard.",
+      desc: "Commercial makeup photo session coverage video, highlighting model coordinates, lighting setups, and visual content production.",
       labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
-      values: ["Video / Motion Graphic", "High-Resolution Social Spot", "Vimeo / Social", "Creative Visual Lead"]
+      values: ["Video / Promo", "High-Resolution Social Spot", "Vimeo / Social", "Creative Visual Lead"]
     }
   };
 
