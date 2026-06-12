@@ -451,4 +451,154 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 1500);
     });
   }
+
+  // --- Photography Showcase Dynamic Gallery ---
+  const photographyItems = [
+    { id: "p1", file: "Crazy_Banana_Product.jpg", title: "Crazy Banana Concept Shoot", category: "Product & Commercial", tag: "product", layout: "span-large" },
+    { id: "p2", file: "Crazy_Banana_Product_1.jpg", title: "Crazy Banana Studio Setup", category: "Product & Commercial", tag: "product", layout: "span-v" },
+    { id: "p3", file: "Crazy_Banana_Product_2.jpg", title: "Crazy Banana Details", category: "Product & Commercial", tag: "product", layout: "span-h" },
+    { id: "p4", file: "Crazy_Banana_Product_3.jpg", title: "Crazy Banana Yellow Grade", category: "Product & Commercial", tag: "product", layout: "standard" },
+    { id: "p5", file: "Crazy_Banana_Product_4.jpg", title: "Crazy Banana Commercial", category: "Product & Commercial", tag: "product", layout: "standard" },
+    { id: "p6", file: "Crazy_Banana_Product_5.jpg", title: "Crazy Banana Creative Styling", category: "Product & Commercial", tag: "product", layout: "span-v" },
+    
+    { id: "p7", file: "IMG_8034 copy.jpg", title: "Studio Fashion Editorial 1", category: "Fashion & Portraits", tag: "portrait", layout: "span-v" },
+    { id: "p8", file: "IMG_8048 copy.jpg", title: "Studio Fashion Editorial 2", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p9", file: "IMG_8053.jpg", title: "Studio Portrait Session 1", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p10", file: "IMG_8071 copy.jpg", title: "Studio Portrait Session 2", category: "Fashion & Portraits", tag: "portrait", layout: "span-large" },
+    { id: "p11", file: "IMG_8083.jpg", title: "Studio Portrait Session 3", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p12", file: "IMG_8105 copy.jpg", title: "Model Portfolio Editorial 1", category: "Fashion & Portraits", tag: "portrait", layout: "span-v" },
+    { id: "p13", file: "IMG_8110 copy.jpg", title: "Model Portfolio Editorial 2", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p14", file: "IMG_8123 copy.jpg", title: "Model Portfolio Editorial 3", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p15", file: "IMG_8129.jpg", title: "Model Portfolio Editorial 4", category: "Fashion & Portraits", tag: "portrait", layout: "span-h" },
+    { id: "p16", file: "IMG_8168 copy.jpg", title: "Corporate Portraiture 1", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p17", file: "IMG_8170 copy.jpg", title: "Corporate Portraiture 2", category: "Fashion & Portraits", tag: "portrait", layout: "span-v" },
+    { id: "p18", file: "IMG_8185 copy.jpg", title: "Corporate Portraiture 3", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p19", file: "IMG_8753 ---copy.jpg", title: "Lifestyle Model Session 1", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p20", file: "IMG_8788 c3opy.jpg", title: "Lifestyle Model Session 2", category: "Fashion & Portraits", tag: "portrait", layout: "span-h" },
+    { id: "p21", file: "IMG_8912 copy.JPG", title: "Lifestyle Model Session 3", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p22", file: "IMG_9070 copy.jpg", title: "Outdoor Portrait Campaign", category: "Fashion & Portraits", tag: "portrait", layout: "span-large" },
+    { id: "p23", file: "5Z8A6967.jpg", title: "Premium Studio Portrait", category: "Fashion & Portraits", tag: "portrait", layout: "span-v" },
+
+    { id: "p24", file: "Facebook 3.jpg", title: "Social Content Production 1", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p25", file: "Facebook 10.jpg", title: "Social Content Production 2", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p26", file: "Facebook 16.jpg", title: "Social Content Production 3", category: "Events & Social", tag: "event", layout: "span-h" },
+    { id: "p27", file: "Facebook 20.jpg", title: "Social Content Production 4", category: "Events & Social", tag: "event", layout: "standard" },
+    
+    { id: "p28", file: "27629410_390813834715044_843683683027766351_o.jpg", title: "Live Event Coverage 1", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p29", file: "27629525_391163281346766_446217568756798736_o.jpg", title: "Live Event Coverage 2", category: "Events & Social", tag: "event", layout: "span-h" },
+    { id: "p30", file: "28166849_395948717534889_5493449548623914799_n.jpg", title: "Live Event Coverage 3", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p31", file: "35432243_447212359075191_5185778319605366784_o.jpg", title: "Press Conference Coverage", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p32", file: "37960079_485273921935701_1659554249115172864_o.jpg", title: "Media Conference Press", category: "Events & Social", tag: "event", layout: "span-h" },
+    { id: "p33", file: "38043188_489158558213904_2565528053463646208_o.jpg", title: "Live Media Interview 1", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p34", file: "38071726_489171418212618_2991628911336488960_o.jpg", title: "Live Media Interview 2", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p35", file: "38085905_489170161546077_8092812713266249728_o.jpg", title: "Live Media Interview 3", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p36", file: "38159110_489146551548438_2467618892357304320_o.jpg", title: "Press Conference Broadcast 1", category: "Events & Social", tag: "event", layout: "span-h" },
+    { id: "p37", file: "38274507_489145234881903_6650924198371786752_o.jpg", title: "Press Conference Broadcast 2", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p38", file: "38703298_496810157448744_7539977588215644160_n.jpg", title: "Press Conference Broadcast 3", category: "Events & Social", tag: "event", layout: "standard" },
+
+    { id: "p39", file: "1.jpg", title: "Creative Concept Shoot 1", category: "Product & Commercial", tag: "product", layout: "standard" },
+    { id: "p40", file: "2.jpg", title: "Creative Concept Shoot 2", category: "Product & Commercial", tag: "product", layout: "standard" },
+    { id: "p41", file: "3.jpg", title: "Creative Concept Shoot 3", category: "Product & Commercial", tag: "product", layout: "span-v" },
+    { id: "p42", file: "4.jpg", title: "Creative Concept Shoot 4", category: "Product & Commercial", tag: "product", layout: "standard" },
+    { id: "p43", file: "13.jpg", title: "Visual Branding Campaign", category: "Product & Commercial", tag: "product", layout: "span-large" },
+    { id: "p44", file: "15.jpg", title: "Visual Catalog Product", category: "Product & Commercial", tag: "product", layout: "span-v" },
+
+    { id: "p45", file: "1-8.jpg", title: "Media Production Scene 1", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p46", file: "1-13.jpg", title: "Media Production Scene 2", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p47", file: "1-21.jpg", title: "Media Production Scene 3", category: "Events & Social", tag: "event", layout: "standard" },
+    { id: "p48", file: "1-349.jpg", title: "Studio Behind-the-Scenes 1", category: "Fashion & Portraits", tag: "portrait", layout: "span-large" },
+    { id: "p49", file: "1-473 copy.jpg", title: "Studio Behind-the-Scenes 2", category: "Fashion & Portraits", tag: "portrait", layout: "span-h" },
+    { id: "p50", file: "1-485-- copy.jpg", title: "Studio Behind-the-Scenes 3", category: "Fashion & Portraits", tag: "portrait", layout: "standard" },
+    { id: "p51", file: "Panorama3.jpg", title: "Wide Angle Event Panorama", category: "Events & Social", tag: "event", layout: "span-h" },
+    { id: "p52", file: "result_img_2022_01_13_01_18_09.jpg", title: "Creative Retouching Test", category: "Product & Commercial", tag: "product", layout: "standard" },
+    { id: "p53", file: "test 444.jpg", title: "Commercial Studio Lighting", category: "Product & Commercial", tag: "product", layout: "standard" }
+  ];
+
+  const photoGrid = document.getElementById("photography-grid");
+  const loadMoreBtn = document.getElementById("load-more-btn");
+  const photoFilters = document.querySelectorAll(".photo-filter-btn");
+
+  let currentPhotoFilter = "all";
+  let itemsToShow = 12;
+
+  function openPhotoLightbox(photoItem) {
+    const data = {
+      title: photoItem.title,
+      price: photoItem.category,
+      type: "image",
+      src: `PICS/${photoItem.file}`,
+      desc: `High-quality visual content asset captured and processed under AR Media Production agency. Professional framing, color correction, and final retouching coordinates.`,
+      labels: ["Asset Category", "Platform / Media", "Primary Software", "Role"],
+      values: [photoItem.category, "Social / Web / Print", "Adobe Photoshop & Lightroom", "Production Director"]
+    };
+    openLightbox(data);
+  }
+
+  function renderPhotoGallery() {
+    if (!photoGrid) return;
+    
+    // Filter items based on active tag
+    const filteredItems = photographyItems.filter(item => {
+      return currentPhotoFilter === "all" || item.tag === currentPhotoFilter;
+    });
+
+    // Determine slice to show
+    const itemsToRender = filteredItems.slice(0, itemsToShow);
+
+    // Render cards
+    photoGrid.innerHTML = itemsToRender.map(item => `
+      <div class="photo-card-item ${item.layout} filter-photo-item" data-photo-id="${item.id}">
+        <div class="photo-preview-container">
+          <div class="photo-overlay">
+            <span class="photo-zoom-icon">🔍</span>
+          </div>
+          <img class="photo-grid-img" src="PICS/${item.file}" alt="${item.title}" loading="lazy">
+        </div>
+        <div class="photo-card-info">
+          <h4>${item.title}</h4>
+          <p class="photo-category">${item.category}</p>
+        </div>
+      </div>
+    `).join("");
+
+    // Bind click events to new cards
+    document.querySelectorAll(".photo-card-item").forEach(card => {
+      card.addEventListener("click", () => {
+        const photoId = card.getAttribute("data-photo-id");
+        const photoItem = photographyItems.find(p => p.id === photoId);
+        if (photoItem) {
+          openPhotoLightbox(photoItem);
+        }
+      });
+    });
+
+    // Toggle Load More button visibility
+    if (itemsToRender.length >= filteredItems.length) {
+      if (loadMoreBtn) loadMoreBtn.style.display = "none";
+    } else {
+      if (loadMoreBtn) loadMoreBtn.style.display = "inline-block";
+    }
+  }
+
+  // Load More Button Event
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener("click", () => {
+      itemsToShow += 12;
+      renderPhotoGallery();
+    });
+  }
+
+  // Filters Event
+  photoFilters.forEach(btn => {
+    btn.addEventListener("click", () => {
+      photoFilters.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentPhotoFilter = btn.getAttribute("data-filter");
+      itemsToShow = 12; // Reset count
+      renderPhotoGallery();
+    });
+  });
+
+  // Call initial render
+  renderPhotoGallery();
 });

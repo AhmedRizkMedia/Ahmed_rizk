@@ -19,6 +19,7 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#real-estate">Real Estate Cases</a></li>
           <li><a href="#media-production">Media Portfolio</a></li>
+          <li><a href="#photography">Photography</a></li>
           <li><a href="#experience">Timeline</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -578,6 +579,34 @@
             <p class="media-category">Makeup Photo Session</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Photography Showcase -->
+  <section id="photography" class="portfolio" style="background-color: var(--bg-secondary); border-top: 1px solid var(--card-border);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Photography Showcase</h2>
+        <p>Studio portraits, commercial product styling, and live event coverage.</p>
+      </div>
+
+      <!-- Photography Category Filters -->
+      <div class="photo-filters">
+        <button class="photo-filter-btn active" data-filter="all">All Photos</button>
+        <button class="photo-filter-btn" data-filter="product">Product & Commercial</button>
+        <button class="photo-filter-btn" data-filter="portrait">Fashion & Portraits</button>
+        <button class="photo-filter-btn" data-filter="event">Events & Social</button>
+      </div>
+
+      <!-- Photography Masonry Grid -->
+      <div id="photography-grid" class="photo-grid">
+        <!-- Dynamically populated by script.js -->
+      </div>
+
+      <!-- Load More Button -->
+      <div class="load-more-container" style="text-align: center; margin-top: 4rem;">
+        <button id="load-more-btn" class="btn btn-secondary">Show More Photos</button>
       </div>
     </div>
   </section>
