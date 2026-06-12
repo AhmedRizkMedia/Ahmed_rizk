@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "BTS Behind the Scenes Spot",
       price: "AR Media Commercial Spot",
       type: "video",
-      src: "https://video.wixstatic.com/video/e5965d_81d6319d06c54527b3f39269a4398ec9/mp4/file.mp4",
+      src: "videos/bts.mp4",
       desc: "An behind-the-scenes promotional spot showcasing AR Media Production's commercial filming projects. Directed, storyboarded, and executed the editing flow with Adobe Premiere Pro.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Video / Commercial", "Full HD Promo Spot", "Adobe Premiere & After Effects", "Director & Executive Producer"]
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Zee Connect TV Feature Spot",
       price: "Zee TV Commercial Branding",
       type: "video",
-      src: "https://video.wixstatic.com/video/e5965d_ed7ad709ef0a4aabba1ce2322803928a/mp4/file.mp4",
+      src: "videos/zee.mp4",
       desc: "TV commercial coverage produced for Zee Connect. Structured the lighting, sound layout, camera tracking movements, and supervised the post-production rendering timeline.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Social / YouTube Video", "TV Feature Spot", "Final Cut Pro X", "Videographer & Video Editor"]
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Masayea Lojain - Lojain Omran Show",
       price: "Celebrity Visual Branding Spot",
       type: "video",
-      src: "https://video.wixstatic.com/video/e5965d_cf69662e3f9b45a5b2bac3272b5b1b9b/mp4/file.mp4",
+      src: "videos/lojain.mp4",
       desc: "Visual branding campaign video produced for Masayea Lojain, featuring TV personality Lojain Omran. Handled visual direction and creative catalog grade alignment.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Video / Motion Graphic", "High-Resolution Social Spot", "Premiere & After Effects", "Creative Visual Lead"]
@@ -293,7 +293,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Emarat Al Aman - SIRA Project",
       price: "Corporate Security Campaign Spot",
       type: "video",
-      src: "https://video.wixstatic.com/video/e5965d_24cb31cbd5844c2fae26f8bda4cc2a86/mp4/file.mp4",
+      src: "videos/sira.mp4",
       desc: "A corporate promotional video spot shot for SIRA (Security Industry Regulatory Agency) in Dubai. Managed production crew, camera positions, and post-production flow.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Corporate Videography", "Marketing Video Release", "Adobe Premiere Pro", "Executive Video Producer"]
@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "TV Presenter Course Coverage",
       price: "Media Training Promo Spot",
       type: "video",
-      src: "https://video.wixstatic.com/video/e5965d_cefc5aeb0c004d7483db298bc7504899/mp4/file.mp4",
+      src: "videos/presenter.mp4",
       desc: "Promo video spot covering the professional TV Presenter Course at Reporters Media Production. Designed lighting coordinates and captured key classroom training moments.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Video / Event spot", "TV Presenter Spot", "Premiere Pro & After Effects", "Lead Videographer & Editor"]
@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "First Print Company Promo",
       price: "Industrial Branding Video",
       type: "video",
-      src: "https://video.wixstatic.com/video/e5965d_22c50b1f0b8d4d36825e44f9dfd1e16a/mp4/file.mp4",
+      src: "videos/firstprint.mp4",
       desc: "Industrial commercial video spot produced for First Print Company. Showcased high-speed printing machinery, design workflow, and corporate branding details.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Commercial Video Spot", "Full HD Promo Spot", "Premiere Pro & Final Cut", "Producer & Storyboarder"]
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Premium Fashion Editorial",
       price: "Photography & Color Retouching",
       type: "image",
-      src: "https://static.wixstatic.com/media/e5965d_2ae9c42ce02f4b438145bc9e6768b17e~mv2_d_1541_2416_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1-473%20copy.jpg",
+      src: "images/fashion.jpg",
       desc: "Creative model shoot produced for AR Media Production. Designed unique background palettes and set dynamic flash coordinates. Color graded and retouched skins to commercial catalog standards.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Editorial Portraiture", "High-Res Retouched Prints", "Adobe Photoshop & Lightroom", "Fashion Photographer"]
@@ -329,7 +329,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Outdoor Billboard Display",
       price: "Dubai Highway Campaign",
       type: "image",
-      src: "https://static.wixstatic.com/media/e5965d_c287a09500904765baf450690e22f11b~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/blank-advertising-light-box-on-modern-ai.jpg",
+      src: "images/billboard.jpg",
       desc: "Commercial billboards and digital screens displayed across Sheikh Zayed Road, Dubai. Managed asset layouts and color correction to ensure high legibility and contrast under outdoor lighting.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Out-of-Home Campaign", "High-Scale Digital Asset", "Photoshop & Illustrator", "Creative Lead & Retoucher"]
@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Premium Event Coverage",
       price: "Live Media Conference",
       type: "image",
-      src: "https://static.wixstatic.com/media/e5965d_0ea4e0508b7845a4915f74c39240ec33~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/camera-at-media-conference-KE3ZALM.jpg",
+      src: "images/event.jpg",
       desc: "Press and conference coverage setups for corporate media events in Dubai. Managed wide-angle camera rigs and ambient low-light settings to produce crisp, publish-ready visual journalism assets.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Press Photography", "High-Res Digital Assets", "Photoshop & Lightroom", "Press Photographer"]
@@ -347,7 +347,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Hospitality & Creative Food Styling",
       price: "Restaurant Launch Asset",
       type: "image",
-      src: "https://static.wixstatic.com/media/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e5965d_ee559b8c58d34f76a4d5687c198e2f9a~mv2.jpg",
+      src: "images/food.jpg",
       desc: "Creative styling layout shot for hospitality campaigns. Configured table layouts, micro-focus parameters, and warm ambient light filters to emphasize texture and color.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["Still Life Commercial", "Menu Catalog Images", "Adobe Photoshop", "Lead photographer"]
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Jumia Egypt Catalog Automation",
       price: "E-Commerce Asset Production",
       type: "image",
-      src: "https://static.wixstatic.com/media/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_d01cf48782824880a5b8f3229886f9f8~mv2_d_3000_1688_s_2.jpg",
+      src: "images/jumia.jpg",
       desc: "Retouching guidelines and workflow optimizations designed for Jumia Egypt. Built batch-actions in Photoshop to crop catalog pictures and correct backgrounds, cutting processing times by 50%.",
       labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
       values: ["E-Commerce Assets", "Retouching Guideline Standard", "Adobe Photoshop Actions", "Retouching Supervisor"]
