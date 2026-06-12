@@ -255,9 +255,9 @@ document.addEventListener("DOMContentLoaded", () => {
       price: "From AED 703,000",
       type: "image",
       src: "images/orchard.png",
-      desc: "Modern luxury apartments in Jumeirah Village Circle (JVC). Created the organic and paid search strategies from scratch on Wix. Driven with zero ad spend SEO structures generating steady high-intent traffic.",
+      desc: "Modern luxury apartments in Jumeirah Village Circle (JVC). Created the organic and paid search strategies from scratch. Driven with zero ad spend SEO structures generating steady high-intent traffic.",
       labels: ["Traffic Channel", "Conversion KPI", "Cost per Lead", "Target Campaign"],
-      values: ["Wix Organic SEO + Meta Ads", "Steady Organic Lead Flow", "Zero Ad Spend Traffic", "The Orchard Place Launch"]
+      values: ["Organic SEO Strategy + Meta Ads", "Steady Organic Lead Flow", "Zero Ad Spend Traffic", "The Orchard Place Launch"]
     }
   };
 
@@ -324,51 +324,6 @@ document.addEventListener("DOMContentLoaded", () => {
       desc: "Second visual branding campaign shot for Liberty Dental Clinic, showcasing advanced equipment, modern facilities, and clinical aesthetics.",
       labels: ["Asset Type", "Deliverable", "Platform", "Primary Role"],
       values: ["Social / YouTube Video", "Interview Series", "Vimeo / Social", "Videographer & Video Editor"]
-    },
-    photo_fashion: {
-      title: "Premium Fashion Editorial",
-      price: "Photography & Color Retouching",
-      type: "image",
-      src: "images/fashion.jpg",
-      desc: "Creative model shoot produced for AR Media Production. Designed unique background palettes and set dynamic flash coordinates. Color graded and retouched skins to commercial catalog standards.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Editorial Portraiture", "High-Res Retouched Prints", "Adobe Photoshop & Lightroom", "Fashion Photographer"]
-    },
-    photo_billboard: {
-      title: "Outdoor Billboard Display",
-      price: "Dubai Highway Campaign",
-      type: "image",
-      src: "images/billboard.jpg",
-      desc: "Commercial billboards and digital screens displayed across Sheikh Zayed Road, Dubai. Managed asset layouts and color correction to ensure high legibility and contrast under outdoor lighting.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Out-of-Home Campaign", "High-Scale Digital Asset", "Photoshop & Illustrator", "Creative Lead & Retoucher"]
-    },
-    photo_event: {
-      title: "Premium Event Coverage",
-      price: "Live Media Conference",
-      type: "image",
-      src: "images/event.jpg",
-      desc: "Press and conference coverage setups for corporate media events in Dubai. Managed wide-angle camera rigs and ambient low-light settings to produce crisp, publish-ready visual journalism assets.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Press Photography", "High-Res Digital Assets", "Photoshop & Lightroom", "Press Photographer"]
-    },
-    photo_food: {
-      title: "Hospitality & Creative Food Styling",
-      price: "Restaurant Launch Asset",
-      type: "image",
-      src: "images/food.jpg",
-      desc: "Creative styling layout shot for hospitality campaigns. Configured table layouts, micro-focus parameters, and warm ambient light filters to emphasize texture and color.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["Still Life Commercial", "Menu Catalog Images", "Adobe Photoshop", "Lead photographer"]
-    },
-    photo_jumia: {
-      title: "Jumia Egypt Catalog Automation",
-      price: "E-Commerce Asset Production",
-      type: "image",
-      src: "images/jumia.jpg",
-      desc: "Retouching guidelines and workflow optimizations designed for Jumia Egypt. Built batch-actions in Photoshop to crop catalog pictures and correct backgrounds, cutting processing times by 50%.",
-      labels: ["Asset Type", "Deliverable", "Software Used", "Primary Role"],
-      values: ["E-Commerce Assets", "Retouching Guideline Standard", "Adobe Photoshop Actions", "Retouching Supervisor"]
     }
   };
 
@@ -376,7 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mediaContainer.innerHTML = "";
 
     if (data.type === "video") {
-      if (data.src.endsWith(".mp4") || data.src.includes("video.wixstatic.com")) {
+      if (data.src.endsWith(".mp4")) {
         const video = document.createElement("video");
         video.src = data.src;
         video.controls = true;
