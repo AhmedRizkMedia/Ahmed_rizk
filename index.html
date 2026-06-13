@@ -980,18 +980,22 @@
       </div>
 
       <div class="contact-form-panel">
-        <form id="contact-form">
+        <form id="contact-form" action="https://formsubmit.co/a.rizk.mask@gmail.com" method="POST">
+          <!-- Hidden inputs for FormSubmit.co configuration -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission!">
+          
           <div class="form-group">
             <label for="form-name">Your Name</label>
-            <input type="text" id="form-name" placeholder="John Doe" required>
+            <input type="text" id="form-name" name="name" placeholder="John Doe" required>
           </div>
           <div class="form-group">
             <label for="form-email">Email Address</label>
-            <input type="email" id="form-email" placeholder="john@example.com" required>
+            <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
           </div>
           <div class="form-group">
             <label for="form-message">Your Message</label>
-            <textarea id="form-message" placeholder="Tell me about your project..." required></textarea>
+            <textarea id="form-message" name="message" placeholder="Tell me about your project..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width: 100%">Send Message</button>
           <div id="form-status" class="form-status"></div>

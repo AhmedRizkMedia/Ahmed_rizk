@@ -443,11 +443,36 @@ document.addEventListener("DOMContentLoaded", () => {
       formStatus.textContent = "Sending message...";
       formStatus.className = "form-status success";
 
-      setTimeout(() => {
-        formStatus.textContent = "Thank you! Your message has been sent successfully. Ahmed will get back to you shortly.";
-        formStatus.className = "form-status success";
-        contactForm.reset();
-      }, 1500);
+      // Submit form asynchronously using FormSubmit's AJAX endpoint
+      fetch("https://formsubmit.co/ajax/a.rizk.mask@gmail.com", {
+        method: "POST",
+        headers: { 
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+          _subject: "New Portfolio Contact Form Submission!"
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success === "true") {
+          formStatus.textContent = "Thank you! Your message has been sent successfully. Ahmed will get back to you shortly.";
+          formStatus.className = "form-status success";
+          contactForm.reset();
+        } else {
+          formStatus.textContent = "Oops! Something went wrong. Please try again or email directly.";
+          formStatus.className = "form-status error";
+        }
+      })
+      .catch(error => {
+        console.error("Error submitting form:", error);
+        formStatus.textContent = "Oops! Something went wrong. Please try again or email directly.";
+        formStatus.className = "form-status error";
+      });
     });
   }
 
